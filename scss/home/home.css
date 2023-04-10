@@ -1,0 +1,331 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Roboto;
+  src: url("../../fonts/Roboto-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: url("../../fonts/IBMPlexSerif-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.burger-menu {
+  width: 50px;
+  height: 40px;
+  display: none;
+  justify-self: end;
+}
+.burger-menu div {
+  width: 41px;
+  height: 4px;
+  margin: 7px;
+  background-color: #000;
+}
+.burger-menu .line-1 {
+  position: relative;
+  top: 24%;
+  transform: rotate(45deg);
+}
+.burger-menu .line-2 {
+  opacity: 0;
+}
+.burger-menu .line-3 {
+  position: relative;
+  bottom: 30%;
+  transform: rotate(135deg);
+}
+
+.burger-container {
+  display: none;
+  text-align: center;
+  width: 100%;
+  background-color: #FFD567;
+}
+.burger-container h4 {
+  font-family: Roboto;
+}
+
+@media (max-width: 1024px) {
+  header h3 {
+    display: none;
+  }
+  section .info img {
+    width: 240px;
+    height: 240px;
+  }
+}
+@media (max-width: 980px) {
+  header .menu {
+    grid-template-columns: 270px auto;
+  }
+  header .menu-desktop {
+    justify-self: end;
+  }
+  .c3 {
+    grid-column: 1/3;
+    justify-self: center;
+  }
+}
+@media (max-width: 720px) {
+  header .menu .menu-desktop {
+    display: none;
+  }
+  header .menu .burger-menu {
+    display: block;
+  }
+}
+@media (max-width: 650px) {
+  header .menu img {
+    margin-left: 0px;
+  }
+  header .img-header .text-header {
+    left: 0px;
+  }
+  .c3 {
+    grid-column: 1;
+  }
+  section .background .rectangle p {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 425px) {
+  main .cards {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: repeat(1, 170px);
+    grid-gap: 10px;
+    justify-items: center;
+  }
+  main .cards .card {
+    width: 240px;
+    height: 170px;
+  }
+  main .cards .card .block {
+    width: 240px;
+    height: 100px;
+  }
+  main .cards .card .block p {
+    font-size: 12px;
+  }
+  main .cards .card .number {
+    width: 40px;
+    height: 40px;
+    font-size: 27px;
+    font-family: Inter;
+    position: relative;
+    top: 20px;
+    left: 43%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+  }
+  section .info img {
+    width: 180px;
+    height: 180px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #F5F5F5;
+}
+
+/*----------------------HEADER---------------------*/
+header .menu {
+  width: 100%;
+  height: 70px;
+  background-color: #FCC12B;
+  font-family: Roboto;
+  line-height: 37px;
+  display: grid;
+  grid-template-columns: 270px auto auto 55px;
+  align-items: center;
+}
+header .menu img {
+  width: 200px;
+  height: 70px;
+  margin-left: 40px;
+}
+header .menu h3 {
+  width: auto;
+  height: auto;
+  justify-self: end;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+header .menu .sign-in {
+  margin-right: 40px;
+}
+header .menu .menu-desktop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+header .img-header {
+  width: 100%;
+  height: 760px;
+  background-image: url("/img/фото4_1-transformed.png");
+  background-position: center center;
+  background-size: cover;
+}
+header .img-header p {
+  position: absolute;
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+}
+header .img-header .text-header {
+  width: 78%;
+  left: 40px;
+  top: 450px;
+  font-size: 5vw;
+}
+header .img-header .booking {
+  width: auto;
+  left: 30%;
+  top: 700px;
+  font-size: 3vw;
+}
+
+/*--------------------------MAIN--------------------*/
+.block-cards {
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.cards {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-rows: repeat(1, 250px);
+  grid-gap: 10px;
+  justify-items: center;
+}
+.cards .card {
+  width: 320px;
+  height: 250px;
+}
+.cards .card .block {
+  width: 320px;
+  height: 180px;
+  background: #FFD567;
+  border-radius: 25px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+.cards .card .block p {
+  width: auto;
+  font-family: Inter;
+  font-size: 26px;
+}
+.cards .card .number {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background: #D5A52A;
+  font-size: 54px;
+  font-family: Inter;
+  position: relative;
+  top: 30px;
+  left: 40%;
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+.background {
+  width: 100%;
+  height: 760px;
+  background-image: url("/img/фото4_1-transformed.png");
+  background-position: center;
+  background-size: cover;
+}
+.background .rectangle {
+  display: grid;
+  position: relative;
+  grid-template-rows: 50% 50%;
+  height: 210px;
+  top: 550px;
+  background: rgba(77, 76, 76, 0.48);
+}
+.background .rectangle p {
+  width: auto;
+  height: 66px;
+  font-family: "IBM Plex Serif";
+  font-size: 5vw;
+  color: #fff;
+  margin-left: 40px;
+}
+.background .rectangle button {
+  width: 40%;
+  height: 50%;
+  background: #FCC12B;
+  border-radius: 100px;
+  border: none;
+  margin: 10px;
+  justify-self: end;
+}
+.background .rectangle button a {
+  font-family: "IBM Plex Serif";
+  font-size: 2vw;
+  text-decoration: none;
+  color: #000;
+}
+
+.info {
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 26% 30% 30%;
+  grid-row-gap: 5px;
+  margin: 0 auto;
+}
+.info .adress {
+  justify-self: center;
+  grid-column: 1/3;
+  font-family: "IBM Plex Serif";
+  font-size: 3vw;
+  width: 75%;
+  text-align: center;
+}
+.info img {
+  justify-self: center;
+  align-self: center;
+  grid-row: 2/4;
+}
+.info .number {
+  justify-self: center;
+  align-self: center;
+  font-family: "IBM Plex Serif";
+  font-size: 3vw;
+  width: 75%;
+}
+
+/*-----------------------FOOTER-------------------------*/
+footer {
+  width: 100%;
+  height: 50px;
+  background: #FCC12B;
+}
+footer p {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "IBM Plex Serif";
+  font-size: 15px;
+}/*# sourceMappingURL=home.css.map */

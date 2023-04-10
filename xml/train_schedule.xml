@@ -1,0 +1,112 @@
+<container>
+    <train>
+        <time>04:29</time>
+        <trainImg>../img/electric-train.png</trainImg>
+        <way>Минск-Пасс.—Борисов 6004 Электричка</way>
+    </train>
+    <train>
+        <time>04:56</time>
+        <trainImg>../img/train.png</trainImg>
+        <way>Москва—Калининград 029Ч Поездфирменный «Янтарь»</way>
+    </train>
+    <train>
+        <time>05:30</time>
+        <trainImg>../img/electric-train.png</trainImg>
+        <way>Минск-Пасс.—Красное Знамя 727 Электричка</way>
+    </train>
+    <train>
+        <time>05:40</time>
+        <trainImg>../img/electric-train.png</trainImg>
+        <way>Минск-Пасс.- Беларусь 7303 Электричка</way>
+    </train>
+    <train>
+        <time>06:20</time>
+        <trainImg>../img/train.png</trainImg>
+        <way>Минск-Москва 722Б "Ласточка"</way>
+    </train>
+    <train>
+        <time>07:42</time>
+        <trainImg>../img/train.png</trainImg>
+        <way>Минск-Орша 862Б</way>
+    </train>
+    <train>
+        <time>08:28</time>
+        <trainImg>../img/electric-train.png</trainImg>
+        <way>Минск-Пасс.-Столбцы 6809 Электричка</way>
+    </train>
+    <train>
+        <time>09:20</time>
+        <trainImg>../img/electric-train.png</trainImg>
+        <way>Минск-Пасс.—Беларусь Электричка</way>
+    </train>
+    <train>
+        <time>10:35</time>
+        <trainImg>../img/train.png</trainImg>
+        <way>Минск-Брест 727Б </way>
+    </train>
+    <train>
+        <time>11:25</time>
+        <trainImg>../img/train.png</trainImg>
+        <way>Минск-Орша 862Б</way>
+    </train>
+    <train>
+        <time>12:58</time>
+        <trainImg>../img/electric-train.png</trainImg>
+        <way>Минск-Пасс. — Руденск 7212 Электричка</way>
+    </train>
+    <train>
+        <time>14:01</time>
+        <trainImg>../img/train.png</trainImg>
+        <way>Минск — Калинковичи 874Б</way>
+    </train>
+    <train>
+        <time>15:35</time>
+        <trainImg>../img/train.png</trainImg>
+        <way>Минск - Могелёв 744Б</way>
+    </train>
+    <train>
+        <time>16:13</time>
+        <trainImg>../img/train.png</trainImg>
+        <way>Минск-Орша 890Б</way>
+    </train>
+    <train>
+        <time>17:25</time>
+        <trainImg>../img/train.png</trainImg>
+        <way>Минск - Полоцк 869Б</way>
+    </train>
+    <train>
+        <time>18:14</time>
+        <trainImg>../img/electric-train.png</trainImg>
+        <way>Минск-Пасс. — Гудогай 7035 Электричка</way>
+    </train>
+    <train>
+        <time>19:25</time>
+        <trainImg>../img/electric-train.png</trainImg>
+        <way>Минск-Пасс. — Молодечно 6133 Электричка</way>
+    </train>
+    <train>
+        <time>20:41</time>
+        <trainImg>../img/train.png</trainImg>
+        <way>Минск-Орша 890Б</way>
+    </train>
+    <train>
+        <time>21:34</time>
+        <trainImg>../img/electric-train.png</trainImg>
+        <way>Минск-Полоцк 869Б</way>
+    </train>
+    <train>
+        <time>22:49</time>
+        <trainImg>../img/train.png</trainImg>
+        <way>Минск-Калинковичи 874Б</way>
+    </train>
+    <train>
+        <time>23:23</time>
+        <trainImg>../img/train.png</trainImg>
+        <way>Минск-Могелёв 744Б</way>
+    </train>
+    <train>
+        <time>00:01</time>
+        <trainImg>../img/train.png</trainImg>
+        <way>Минск-Могелёв 890Б</way>
+    </train>
+</container>

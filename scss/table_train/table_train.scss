@@ -1,0 +1,106 @@
+@import '../mixins/mixins', '../burger_menu/burger_menu', '../media/media';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #F5F5F5;
+}
+header {
+
+   @include header_style();
+
+   margin-bottom: 10px;
+
+}
+section {
+    h2 {
+        font-family: 'IBM Plex Serif';
+        text-align: center;
+
+        margin-bottom: 40px;
+    }
+}
+.booking {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    margin-bottom: 40px;
+    
+    .input_where_from, .input_date {
+        justify-self: end;
+        margin-right: 30px;
+    }
+
+    .input_where_to, .button_booking {
+        margin-left: 30px;
+    }
+
+    input, button {
+        width: 320px;
+        height: 40px;
+        
+        margin: 10px;
+
+        border: 0;
+        border-radius: 10px;
+
+        font-family: 'IBM Plex Serif';
+        font-weight: 600;
+    }
+    
+    button {
+        background-color: #FCC12B;
+    }
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+    
+    margin-bottom: 50px;
+    .rows {
+        width: 80%;
+
+        display: grid;
+        grid-template-columns: 10% 5% 85%;
+
+        .time {
+            justify-self: center;
+            align-self: center;
+
+            font-family: 'IBM Plex Serif';
+            font-weight: 600;
+        }
+
+        .trainImg {
+            width: 40px;
+            height: 40px;
+
+            margin: 5px;
+        }
+
+        .way {
+            align-self: center;
+
+            font-family: 'IBM Plex Serif';
+            font-weight: 600;
+        }
+    }  
+    .rows:nth-child(2n) {
+        background-color: #FFD567;
+    }
+
+    .rows:nth-child(2n+1) {
+        background-color: #FFE297;
+    }
+}
+/*-----------------------FOOTER-------------------------*/
+footer {
+
+    @include footer_style();
+
+}

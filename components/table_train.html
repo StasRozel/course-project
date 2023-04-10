@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/table_train/table_train.css">
+    <title>Table_train</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <img src="../img/Опять_вокзал_Стасу_Монтажная_область_1.svg" alt="">
+            <h3>Железнодорожный вокзал</h3>
+            <div class="menu-desktop">
+                <h4>Расписание поездов</h4>
+                <h4>Забронировать</h4>
+                <h4 class="sign-in">Войти</h4>
+            </div>
+            <div class="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="burger-container">
+            <h4>Расписание поездов</h4>
+            <h4>Забронировать</h4>
+            <h4 class="sign-in">Войти</h4>
+        </div>
+    </header>
+    <main>
+        <section> 
+            <h2>Расписание поездов и электричек</h2>
+            <form class="booking">
+               
+                <input class="input_where_from" type="text" placeholder="Откуда">
+                <input class="input_where_to" type="text" placeholder="Куда">
+                <input class="input_date" type="date">
+                <button class="button_booking">
+                    Забронировать
+                </button>
+            </form>
+        </section>
+        <section>
+            <div class="table"></div>
+        </section>
+    </main>
+     <footer>
+        <p>
+            © 2018 - 2023 Все права защищены Железнодорожный вокзал «Минск-Пассажирский».
+        </p>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/parseXML.js"></script>
+</body>
+
+</html>

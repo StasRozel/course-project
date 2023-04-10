@@ -1,0 +1,38 @@
+.burger-menu {
+    width: 50px;
+    height: 40px;
+    display: none;
+    justify-self: end;
+
+    div {
+        width: 41px;
+        height: 4px;
+        margin: 7px;
+        background-color: #000;
+    }
+    .line-1 {
+        position: relative;
+        top: 24%;
+        transform: rotate(45deg);
+    }
+    .line-2 {
+        opacity: 0;
+    }
+    .line-3 {
+        position: relative;
+        bottom: 30%;
+        transform: rotate(135deg); 
+    }
+}
+
+.burger-container {
+    display: none;
+    text-align: center;
+    width: 100%;
+    background-color: #FFD567;
+    h4 {
+        font-family: Roboto;
+    }
+}   
+
+

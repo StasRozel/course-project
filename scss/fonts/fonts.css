@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../../fonts/Roboto-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: url("../../fonts/IBMPlexSerif-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}/*# sourceMappingURL=fonts.css.map */

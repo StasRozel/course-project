@@ -1,0 +1,131 @@
+@media (max-width: 1024px) {
+    header {
+
+        h3 {
+            display: none;
+        }
+    }
+
+    section {
+        .info {
+            img {
+                width: 240px;
+                height: 240px;
+            }
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    header {
+        .menu {
+            grid-template-columns: 270px auto;
+        }
+
+        .menu-desktop {
+            justify-self: end;
+        }
+
+    }
+
+    .c3 {
+        grid-column: 1/3;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 720px) {
+    header {
+        .menu {
+            .menu-desktop {
+                display: none;
+            }
+
+            .burger-menu {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        .menu {
+            img {
+                margin-left: 0px;
+            }
+        }
+
+        .img-header {
+            .text-header {
+                left: 0px;
+            }
+        }
+    }
+
+    .c3 {
+        grid-column: 1;
+    }
+
+    section {
+        .background {
+            .rectangle {
+                p {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    main {
+
+        .cards {
+
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-rows: repeat(1, 170px);
+            grid-gap: 10px;
+            justify-items: center;
+
+            .card {
+                width: 240px;
+                height: 170px;
+                .block {
+                    width: 240px;
+                    height: 100px;
+                    p {
+                        font-size: 12px;
+                    }
+                }
+                .number {
+                    width: 40px;
+                    height: 40px;
+                    
+                    font-size: 27px;
+                    font-family: Inter;
+                    position: relative;
+                    top: 20px;
+                    left: 43%;
+        
+                    display: grid;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+            
+        }
+
+    }
+
+    section {
+        .info {
+            img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+}
