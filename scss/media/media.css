@@ -2,6 +2,12 @@
   header h3 {
     display: none;
   }
+  header .img-header {
+    height: 480px;
+  }
+  .background {
+    height: 480px;
+  }
   section .info img {
     width: 240px;
     height: 240px;
@@ -33,6 +39,15 @@
   }
   header .img-header .text-header {
     left: 0px;
+  }
+  header .img-header {
+    height: 240px;
+  }
+  .background {
+    height: 240px;
+  }
+  .background .rectangle {
+    height: 40%;
   }
   .c3 {
     grid-column: 1;

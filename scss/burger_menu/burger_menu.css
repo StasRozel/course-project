@@ -11,19 +11,22 @@
   background-color: #000;
 }
 .burger-menu .line-1 {
+  transition: 0.25s ease-in-out;
   position: relative;
   top: 24%;
   transform: rotate(45deg);
 }
 .burger-menu .line-2 {
+  position: relative;
   opacity: 0;
+  animation: anim1 0.25s;
 }
 .burger-menu .line-3 {
+  transition: 0.25s ease-in-out;
   position: relative;
   bottom: 30%;
   transform: rotate(135deg);
 }
-
 .burger-container {
   display: none;
   text-align: center;

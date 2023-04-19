@@ -1,4 +1,5 @@
-@import '../mixins/mixins', '../burger_menu/burger_menu', '../media/media';
+@import '../mixins/mixins.scss', '../burger_menu/burger_menu', '../media/media';
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +14,7 @@ header {
 
     @include header_style();
 
+    margin-bottom: 10px;
 }
 
 /*--------------------------MAIN--------------------*/
@@ -69,18 +71,20 @@ header {
 }
 
 .background {
+    display: grid;
     width: 100%;
     height: 760px;
     background-image: url("/img/фото4_1-transformed.png");
-    background-position: center;
+    background-position: center center;
     background-size: cover;
+    background-position: center;
+
 
     .rectangle {
         display: grid;
-        position: relative;
         grid-template-rows: 50% 50%;
-        height: 210px;
-        top: 550px;
+        align-self: end;
+        height: 30%;
         background: rgba(77, 76, 76, 0.48);
 
         p {
@@ -149,6 +153,3 @@ header {
 footer {
     @include footer_style();
 }
-
-
-

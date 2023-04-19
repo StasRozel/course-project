@@ -11,17 +11,25 @@
         background-color: #000;
     }
     .line-1 {
+        transition: .25s ease-in-out;
         position: relative;
         top: 24%;
         transform: rotate(45deg);
     }
     .line-2 {
+        position: relative;
         opacity: 0;
+        animation: anim1 .25s;
     }
     .line-3 {
+        transition: .25s ease-in-out;
         position: relative;
         bottom: 30%;
         transform: rotate(135deg); 
+    }
+
+    .line {
+        
     }
 }
 

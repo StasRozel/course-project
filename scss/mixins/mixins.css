@@ -1,3 +1,89 @@
+@media (max-width: 1024px) {
+  header h3 {
+    display: none;
+  }
+  header .img-header {
+    height: 480px;
+  }
+  section .info img {
+    width: 240px;
+    height: 240px;
+  }
+}
+@media (max-width: 980px) {
+  header .menu {
+    grid-template-columns: 270px auto;
+  }
+  header .menu-desktop {
+    justify-self: end;
+  }
+  .c3 {
+    grid-column: 1/3;
+    justify-self: center;
+  }
+}
+@media (max-width: 720px) {
+  header .menu .menu-desktop {
+    display: none;
+  }
+  header .menu .burger-menu {
+    display: block;
+  }
+}
+@media (max-width: 650px) {
+  header .menu img {
+    margin-left: 0px;
+  }
+  header .img-header .text-header {
+    left: 0px;
+  }
+  header .img-header {
+    height: 240px;
+  }
+  .c3 {
+    grid-column: 1;
+  }
+  section .background .rectangle p {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 425px) {
+  main .cards {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: repeat(1, 170px);
+    grid-gap: 10px;
+    justify-items: center;
+  }
+  main .cards .card {
+    width: 240px;
+    height: 170px;
+  }
+  main .cards .card .block {
+    width: 240px;
+    height: 100px;
+  }
+  main .cards .card .block p {
+    font-size: 12px;
+  }
+  main .cards .card .number {
+    width: 40px;
+    height: 40px;
+    font-size: 27px;
+    font-family: Inter;
+    position: relative;
+    top: 20px;
+    left: 43%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+  }
+  section .info img {
+    width: 180px;
+    height: 180px;
+  }
+}
 @font-face {
   font-family: Roboto;
   src: url("../../fonts/Roboto-Light.ttf") format("truetype");
@@ -29,19 +115,22 @@
   background-color: #000;
 }
 .burger-menu .line-1 {
+  transition: 0.25s ease-in-out;
   position: relative;
   top: 24%;
   transform: rotate(45deg);
 }
 .burger-menu .line-2 {
+  position: relative;
   opacity: 0;
+  animation: anim1 0.25s;
 }
 .burger-menu .line-3 {
+  transition: 0.25s ease-in-out;
   position: relative;
   bottom: 30%;
   transform: rotate(135deg);
 }
-
 .burger-container {
   display: none;
   text-align: center;
