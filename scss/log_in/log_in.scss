@@ -1,0 +1,83 @@
+@import '../mixins/mixins', '../burger_menu/burger_menu', '../media/media_table_train/media.scss';
+
+*  {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    height: 100vh;
+
+    background: url('../../img/Minsk_railroad_station_2_1-transformed.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 20% 80%;
+    justify-items: center;
+    align-items: center;
+
+    width: 60%;
+    height: 300px;
+
+    background-color: #FCC12B;
+    border-radius: 30px;
+
+
+    h2 {
+        font-family: 'IBM Plex Serif';
+        align-self: end;
+        margin-bottom: 20px;
+        text-align: center;
+    
+    }
+
+    form {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+
+        input,
+        button {
+            width: 80%;
+            height: 40px;
+
+            justify-self: center;
+
+            margin: 10px;
+
+            border: 0;
+            border-radius: 10px;
+
+            font-family: 'IBM Plex Serif';
+            font-weight: 600;
+        }
+
+        button {
+            width: 50%;
+            background-color: #FFD567; 
+        }
+    }
+
+    
+}
+
+@media (max-width: 425px) {
+    .wrapper {
+        form {
+            button {
+                width: 80%;
+            }
+        }
+    }
+}

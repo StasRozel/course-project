@@ -1,4 +1,4 @@
-@import '../mixins/mixins', '../burger_menu/burger_menu', '../media/media';
+@import '../mixins/mixins', '../burger_menu/burger_menu', '../media/media_table_train/media.scss';
 
 * {
     margin: 0;
@@ -66,7 +66,7 @@ section {
         width: 80%;
 
         display: grid;
-        grid-template-columns: 10% 5% 85%;
+        grid-template-columns: 10% 40px 85%;
 
         .time {
             justify-self: center;
@@ -84,6 +84,7 @@ section {
         }
 
         .way {
+            width: 80%;
             align-self: center;
 
             font-family: 'IBM Plex Serif';

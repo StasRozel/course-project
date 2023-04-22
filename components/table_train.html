@@ -7,18 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../scss/table_train/table_train.css">
     <link rel="stylesheet" href="../scss/mixins/mixins.css">
-    <title>Table_train</title>
+    <link rel="stylesheet" href="../scss/media/media_table_train/media.scss">
+    <title>Расписание поездов</title>
 </head>
 
 <body>
     <header>
         <div class="menu">
-            <img src="../img/Опять_вокзал_Стасу_Монтажная_область_1.svg" alt="">
+            <a href="home.html"><img src="../img/Опять_вокзал_Стасу_Монтажная_область_1.svg" alt="Иконка вокзала"></a>
             <h3>Железнодорожный вокзал</h3>
             <div class="menu-desktop">
-                <h4>Расписание поездов</h4>
-                <h4>Забронировать</h4>
-                <h4 class="sign-in">Войти</h4>
+                <a href="table_train.html">Расписание поездов</a>
+                <a href="booking.html">Забронировать</a>
+                <a href="sign_in.html" class="sign-in">Войти</a>
             </div>
             <div class="burger-menu">
                 <div class="line"></div>
@@ -27,9 +28,9 @@
             </div>
         </div>
         <div class="burger-container">
-            <h4>Расписание поездов</h4>
-            <h4>Забронировать</h4>
-            <h4 class="sign-in">Войти</h4>
+            <a href="table_train.html">Расписание поездов</a>
+            <a href="booking.html">Забронировать</a>
+            <a href="sign_in.html" class="sign-in">Войти</a>
         </div>
     </header>
     <main>
@@ -38,7 +39,7 @@
             <form class="booking">
                 <input class="input_where_from" type="text" placeholder="Откуда">
                 <input class="input_where_to" type="text" placeholder="Куда">
-                <input class="input_date" type="date">
+                <input class="input_date" type="time">
                 <button class="button_booking">
                     Забронировать
                 </button>

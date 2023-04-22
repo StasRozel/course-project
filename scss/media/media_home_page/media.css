@@ -37,11 +37,11 @@
   header .menu img {
     margin-left: 0px;
   }
-  header .img-header .text-header {
-    left: 0px;
-  }
   header .img-header {
     height: 240px;
+  }
+  header .img-header .text-header, header .img-header .booking {
+    left: 0px;
   }
   .background {
     height: 240px;
@@ -91,5 +91,8 @@
   section .info img {
     width: 180px;
     height: 180px;
+  }
+  footer p {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=media.css.map */

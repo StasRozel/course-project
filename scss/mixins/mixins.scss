@@ -1,4 +1,4 @@
-@import '../media/media', '../fonts/fonts', '../burger_menu/burger_menu';
+@import '../media/media_home_page/media.scss','../media/media_table_train/media.scss', '../fonts_family/fonts', '../burger_menu/burger_menu';
 
 @mixin header_style {
     .menu {
@@ -7,6 +7,7 @@
        background-color: #FCC12B;
        font-family: Roboto;
        line-height: 37px;
+
        display: grid;
        grid-template-columns: 270px auto auto 55px;
        align-items: center;
@@ -19,23 +20,29 @@
 
        h3 {
             justify-self:start;
-           user-select: none;
+            user-select: none;
        }
 
        .sign-in {
-           margin-right: 40px;
+            margin-right: 40px;
        }
 
        .menu-desktop {
-           display: grid;
-           grid-template-columns: repeat(3, 1fr);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
            
-           h4 {
-            
+           a {
             width: auto;
             height: auto;
+
             justify-self: end;
+
             user-select: none;
+
+            text-decoration: none;
+            color: #000;
+            font-family: 'Roboto';
+            font-weight: bold;
         }
        }
    }
@@ -60,17 +67,18 @@
             width: 78%;
             left: 40px;
             top:50%;
-            font-size: 5vw;
+            font-size: 4.5vw;
  
         }
  
         .booking {
-            width: auto;
+            width: 60%;
+            left: 40px;
             top: 55%;
-            font-size: 3vw;
+            font-size: 2vw;
         }
     }
-   }
+}
 
 @mixin footer_style {
     width: 100%;

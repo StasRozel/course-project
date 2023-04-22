@@ -62,12 +62,11 @@
         }
 
         .img-header {
-            .text-header {
+            height: 240px;
+
+            .text-header, .booking {
                 left: 0px;
             }
-        }
-        .img-header {
-            height: 240px;
         }
     }
     .background {
@@ -140,6 +139,11 @@
                 width: 180px;
                 height: 180px;
             }
+        }
+    }
+    footer {
+        p {
+            font-size: 10px;
         }
     }
 }
