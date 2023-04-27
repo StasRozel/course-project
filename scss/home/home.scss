@@ -1,5 +1,4 @@
-@import '../mixins/mixins.scss', '../burger_menu/burger_menu', '../media/media_home_page/media.scss';
-
+@import '../mixins/mixins.scss';
 * {
     margin: 0;
     padding: 0;
@@ -21,51 +20,52 @@ header {
 .block-cards {
     height: auto;
     margin-bottom: 40px;
-}
 
-.cards {
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-template-rows: repeat(1, 250px);
-    grid-gap: 10px;
-    justify-items: center;
 
-    .card {
-        width: 320px;
-        height: 250px;
+    .cards {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-template-rows: repeat(1, 250px);
+        grid-gap: 10px;
+        justify-items: center;
 
-        .block {
+        .card {
             width: 320px;
-            height: 180px;
-            background: #FFD567;
-            border-radius: 25px;
+            height: 250px;
 
-            display: grid;
-            align-items: center;
-            text-align: center;
+            .block {
+                width: 320px;
+                height: 180px;
+                background: #FFD567;
+                border-radius: 25px;
 
-            p {
-                width: auto;
-                font-family: Inter;
-                font-size: 26px;
+                display: grid;
+                align-items: center;
+                text-align: center;
+
+                p {
+                    width: auto;
+                    font-family: Inter;
+                    font-size: 26px;
+                }
             }
-        }
 
-        .number {
-            width: 70px;
-            height: 70px;
-            border-radius: 100%;
-            background: #D5A52A;
-            font-size: 54px;
-            font-family: Inter;
-            position: relative;
-            top: 30px;
-            left: 40%;
+            .number {
+                width: 70px;
+                height: 70px;
+                border-radius: 100%;
+                background: #D5A52A;
+                font-size: 54px;
+                font-family: Inter;
+                position: relative;
+                top: 30px;
+                left: 40%;
 
-            display: grid;
-            align-items: center;
-            text-align: center;
+                display: grid;
+                align-items: center;
+                text-align: center;
+            }
         }
     }
 }

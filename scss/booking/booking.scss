@@ -24,7 +24,7 @@ body {
     align-items: center;
 
     width: 60%;
-    height: 300px;
+    height: 260px;
 
     background-color: #FCC12B;
     border-radius: 30px;
@@ -33,14 +33,13 @@ body {
     h2 {
         font-family: 'IBM Plex Serif';
         align-self: end;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-align: center;
-    
     }
 
-    .container_booking {
-width: 100%;
-        
+    form{
+        width: 100%;
+
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -75,7 +74,7 @@ width: 100%;
         }
 
         button {
-            background-color: #FFD567; 
+            background-color: #FFD567;
         }
     }
 }
@@ -86,18 +85,32 @@ width: 100%;
         h2 {
             font-size: 18px;
         }
-        
+
     }
 }
 
 @media (max-width: 425px) {
     .wrapper {
+        grid-template-rows: 20% 80%;
 
-       h2 {
-        font-size: 14px;
-       }
-        .container_booking {
-           
+        height: 340px;
+        h2 {
+            font-size: 14px;
+        }
+
+        form {
+            height: auto;
+
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+
+            .input_where_from, .input_date,
+            .input_where_to, .button_booking {
+                justify-self: center;
+                margin-left: 10px;
+                margin-right: 0px;
+            }
+
             button {
                 font-size: 10px;
             }

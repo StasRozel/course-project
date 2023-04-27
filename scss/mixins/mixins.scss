@@ -1,9 +1,9 @@
-@import '../media/media_home_page/media.scss','../media/media_table_train/media.scss', '../fonts_family/fonts', '../burger_menu/burger_menu';
+@import '../fonts_family/fonts';
 
 @mixin header_style {
     .menu {
        width: 100%;
-       height: 70px;
+       height: 80px;
        background-color: #FCC12B;
        font-family: Roboto;
        line-height: 37px;
@@ -27,26 +27,26 @@
             margin-right: 40px;
        }
 
-       .menu-desktop {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-           
-           a {
-            width: auto;
-            height: auto;
-
-            justify-self: end;
-
-            user-select: none;
-
-            text-decoration: none;
-            color: #000;
-            font-family: 'Roboto';
-            font-weight: bold;
-        }
-       }
+       
    }
+   .menu-desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+   a {
+    width: auto;
+    height: auto;
 
+    justify-self: center;
+
+    user-select: none;
+
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+}
     .img-header {
         width: 100%;
         height: 760px;

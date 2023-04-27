@@ -1,11 +1,11 @@
 @media (max-width: 1024px) {
-  header h3 {
+  header .menu h3 {
     display: none;
   }
   header .img-header {
     height: 480px;
   }
-  .background {
+  section .background {
     height: 480px;
   }
   section .info img {
@@ -26,10 +26,10 @@
   }
 }
 @media (max-width: 720px) {
-  header .menu .menu-desktop {
+  header .menu-desktop {
     display: none;
   }
-  header .menu .burger-menu {
+  header .burger-menu {
     display: block;
   }
 }
@@ -40,24 +40,22 @@
   header .img-header {
     height: 240px;
   }
-  header .img-header .text-header, header .img-header .booking {
+  header .img-header .text-header,
+  header .img-header .booking {
     left: 0px;
   }
-  .background {
+  section .background {
     height: 240px;
   }
-  .background .rectangle {
+  .rectangle {
     height: 40%;
   }
   .c3 {
     grid-column: 1;
   }
-  section .background .rectangle p {
-    margin-left: 0px;
-  }
 }
 @media (max-width: 425px) {
-  main .cards {
+  main .block-cards .cards {
     height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -65,18 +63,18 @@
     grid-gap: 10px;
     justify-items: center;
   }
-  main .cards .card {
+  main .block-cards .cards .card {
     width: 240px;
     height: 170px;
   }
-  main .cards .card .block {
+  main .block-cards .cards .card .block {
     width: 240px;
     height: 100px;
   }
-  main .cards .card .block p {
+  main .block-cards .cards .card .block p {
     font-size: 12px;
   }
-  main .cards .card .number {
+  main .block-cards .cards .card .number {
     width: 40px;
     height: 40px;
     font-size: 27px;

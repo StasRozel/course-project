@@ -1,16 +1,24 @@
 @media (max-width: 1024px) {
     header {
 
-        h3 {
-            display: none;
+        .menu {
+            h3 {
+                display: none;
+            }
         }
+
         .img-header {
             height: 480px;
         }
+        
     }
-    .background {
-        height: 480px;
+    
+    section {
+        .background {
+            height: 480px;
+        }
     }
+
     section {
         .info {
             img {
@@ -40,18 +48,22 @@
 }
 
 @media (max-width: 720px) {
-    header {
-        .menu {
-            .menu-desktop {
-                display: none;
-            }
+    
+            header {
+                .menu-desktop {
+                    display: none;
+                }
+    
+                .burger-menu {
+                    display: block;
+                }
+              
 
-            .burger-menu {
-                display: block;
             }
-        }
-    }
+     
 }
+
+
 
 @media (max-width: 650px) {
     header {
@@ -59,76 +71,76 @@
             img {
                 margin-left: 0px;
             }
+
+            
         }
 
         .img-header {
             height: 240px;
-
-            .text-header, .booking {
+            .text-header,
+            .booking {
                 left: 0px;
             }
         }
     }
-    .background {
-        height: 240px;
-
-        .rectangle {
-            height: 40%;
+    
+    section {
+        .background {
+            height: 240px;
         }
+    }
+
+    .rectangle {
+        height: 40%;
     }
     .c3 {
         grid-column: 1;
-    }
-
-    section {
-        .background {
-            .rectangle {
-                p {
-                    margin-left: 0px;
-                }
-            }
-        }
     }
 }
 
 @media (max-width: 425px) {
     main {
 
-        .cards {
+        .block-cards {
+            .cards {
 
-            height: auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            grid-template-rows: repeat(1, 170px);
-            grid-gap: 10px;
-            justify-items: center;
+                height: auto;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                grid-template-rows: repeat(1, 170px);
+                grid-gap: 10px;
+                justify-items: center;
 
-            .card {
-                width: 240px;
-                height: 170px;
-                .block {
+                .card {
                     width: 240px;
-                    height: 100px;
-                    p {
-                        font-size: 12px;
+                    height: 170px;
+
+                    .block {
+                        width: 240px;
+                        height: 100px;
+
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+
+                    .number {
+                        width: 40px;
+                        height: 40px;
+
+                        font-size: 27px;
+                        font-family: Inter;
+                        position: relative;
+                        top: 20px;
+                        left: 43%;
+
+                        display: grid;
+                        align-items: center;
+                        text-align: center;
                     }
                 }
-                .number {
-                    width: 40px;
-                    height: 40px;
-                    
-                    font-size: 27px;
-                    font-family: Inter;
-                    position: relative;
-                    top: 20px;
-                    left: 43%;
-        
-                    display: grid;
-                    align-items: center;
-                    text-align: center;
-                }
+
             }
-            
         }
 
     }
@@ -141,6 +153,7 @@
             }
         }
     }
+
     footer {
         p {
             font-size: 10px;

@@ -10,29 +10,124 @@
   margin: 7px;
   background-color: #000;
 }
-.burger-menu .line-1 {
-  transition: 0.25s ease-in-out;
+.burger-menu .open-1 {
+  animation: open_top_line 0.25s;
   position: relative;
   top: 24%;
   transform: rotate(45deg);
 }
-.burger-menu .line-2 {
-  position: relative;
+.burger-menu .open-2 {
   opacity: 0;
-  animation: anim1 0.25s;
 }
-.burger-menu .line-3 {
-  transition: 0.25s ease-in-out;
+.burger-menu .open-3 {
+  animation: open_bottom_line 0.25s;
   position: relative;
   bottom: 30%;
-  transform: rotate(135deg);
+  transform: rotate(-45deg);
 }
-.burger-container {
-  display: none;
-  text-align: center;
+.burger-menu .close-1 {
+  animation: close_top_line 0.25s;
+  position: relative;
+  top: 0%;
+  transform: rotate(0deg);
+}
+.burger-menu .close-2 {
+  transition: 0.25s ease-in-out;
+  opacity: 1;
+}
+.burger-menu .close-3 {
+  animation: close_bottom_line 0.25s;
+  position: relative;
+  bottom: 0%;
+  transform: rotate(0deg);
+}
+
+@keyframes open_top_line {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes open_bottom_line {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+@keyframes close_top_line {
+  0% {
+    top: 24%;
+    transform: rotate(45deg);
+  }
+  100% {
+    top: 0%;
+    transform: rotate(0deg);
+  }
+}
+@keyframes close_bottom_line {
+  0% {
+    bottom: 30%;
+    transform: rotate(-45deg);
+  }
+  100% {
+    bottom: 0%;
+    transform: rotate(0deg);
+  }
+}
+.burger-container-on, .burger-container-off {
   width: 100%;
+  animation: menu_on 0.5s;
+  height: 40px;
   background-color: #FFD567;
+  text-align: center;
 }
-.burger-container h4 {
+.burger-container-on a, .burger-container-off a {
+  display: inline-block;
+  animation: menu_on 0.5s;
+  height: 40px;
+  margin-left: 30px;
+  opacity: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-decoration: none;
+  color: #000;
   font-family: Roboto;
+  font-weight: bold;
+}
+
+.burger-container-off {
+  animation: menu_off 0.5s;
+  opacity: 0;
+  height: 0px;
+}
+.burger-container-off a {
+  animation: menu_off 0.5s;
+  opacity: 0;
+  height: 0px;
+}
+
+@keyframes menu_on {
+  0% {
+    height: 0px;
+    opacity: 0;
+  }
+  100% {
+    height: 40px;
+    opacity: 1;
+  }
+}
+@keyframes menu_off {
+  0% {
+    height: 40px;
+    opacity: 1;
+  }
+  100% {
+    height: 0px;
+    opacity: 0;
+  }
 }/*# sourceMappingURL=burger_menu.css.map */

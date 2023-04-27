@@ -15,7 +15,6 @@ fetch('../xml/train_schedule.xml')
     const times = xmlDoc.getElementsByTagName('time');
     const train_imgs = xmlDoc.getElementsByTagName('trainImg');
 
-    //записать каждое значение в  объекты,а через  массив уже создавать динамически таблицу
     let ways_arr = [], times_arr = [], train_imgs_arr = [];
     ways_arr = table(ways, ways_arr);
     times_arr = table(times, times_arr);
