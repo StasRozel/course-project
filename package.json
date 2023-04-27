@@ -1,0 +1,22 @@
+{
+  "name": "stasrozel",
+  "version": "1.0.0",
+  "description": "course_project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StasRozel/couerse-project.git"
+  },
+  "author": "StasRozel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StasRozel/couerse-project/issues"
+  },
+  "homepage": "https://github.com/StasRozel/couerse-project#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -6,9 +6,7 @@ let table = (arr_tag, arr) => {
   return arr;
 }
 
-fetch('../xml/train_schedule.xml')
-  .then(res => res.text())
-  .then(xmlString => {
+let parser = (xmlString => {
     const parser = new DOMParser();
     const xmlDoc = parser.parseFromString(xmlString, 'text/xml');
     const ways = xmlDoc.getElementsByTagName('way');
@@ -33,5 +31,11 @@ fetch('../xml/train_schedule.xml')
       );
     }
   })
-
+  async function parseXML() {
+    let a = await fetch('/xml/train_schedule.xml');
+    let xmlString = await a.text();
+    parser(xmlString);
+  }
+  
+  parseXML();
   // 
