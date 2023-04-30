@@ -41,32 +41,7 @@ body {
     }
 
     form {
-        width: 100%;
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-
-        input,
-        button {
-            width: 80%;
-            height: 40px;
-
-            justify-self: center;
-
-            margin: 10px;
-
-            border: 0;
-            border-radius: 10px;
-
-            font-family: 'IBM Plex Serif';
-            font-weight: 600;
-        }
-
-        button {
-            width: 50%;
-            background-color: #FFD567; 
-        }
+        @include form;
     }
 
     

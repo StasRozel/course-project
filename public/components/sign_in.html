@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../scss/sign_in/sign_in.css">
-    <title>Document</title>
+    <link rel="icon" href="/img/icons-railway-station.ico" >
+    <link rel="stylesheet" href="/scss/sign_in/sign_in.css">
+    <title>Войти</title>
 </head>
 <body>
+    <div class="modal"></div>
     <div class="wrapper">
         <h2>Войти</h2>
-        <form class="container_log_in">
+        <div class="container_log_in">
             <input class="input_login" type="text" placeholder="Логин">
-            <input class="input_password" type="text" placeholder="Пароль">
-            <button class="button_booking">
+            <input class="input_password" type="password" placeholder="Пароль">
+            <button class="button_log_in">
                 Войти
             </button>
-            <a href="log_in.html">Зарегистрироваться</a>
-        </form>
+            <a href="/components/log_in.html">Зарегистрироваться</a>
+            <a href="/components/home.html">Домой</a>
+        </div>
     </div>
+
+    <script src="/js/parser_to_user.js"></script>
+    
 </body>
 </html>

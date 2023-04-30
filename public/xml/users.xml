@@ -1,21 +1,34 @@
-<user>
-    <name>Bob</name>
-</user>
-<user>
-    <name>Bob</name>
-</user>
-<user>
-    <name>Bob</name>
-</user>
-<user>
-    <name>Bob</name>
-</user>
-<user>
-    <name>Bob</name>
-</user>
-<user>
-    <name>Bob</name>
-</user>
-<user>
-    <name>Bob</name>
-</user>
+<users>    
+    <user>
+        <login>Misha</login>
+        <password>stas11</password>
+    </user>
+    <user>
+        <login>vlad</login>
+        <password>0987</password>
+    </user>
+    <user>
+        <login>Vika</login>
+        <password>0987</password>
+    </user>
+    <user>
+        <login>Misha</login>
+        <password>1234</password>
+    </user>
+    <user>
+        <login>Popovich</login>
+        <password>0987</password>
+    </user>
+    <user>
+        <login>vlad</login>
+        <password>1234</password>
+    </user>
+    <user>
+        <login>Stas</login>
+        <password>1234</password>
+    </user>
+    <user>
+        <login>Stas</login>
+        <password>0000</password>
+    </user>
+</users>

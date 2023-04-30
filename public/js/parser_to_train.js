@@ -38,4 +38,3 @@ let parser = (xmlString => {
   }
   
   parseXML();
-  // 

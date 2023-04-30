@@ -249,7 +249,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
 .wrapper form input,
 .wrapper form button {
@@ -265,6 +265,12 @@ body {
 .wrapper form button {
   width: 50%;
   background-color: #FFD567;
+}
+.wrapper form a {
+  text-decoration: none;
+  color: #000;
+  font-family: "IBM Plex Serif";
+  justify-self: center;
 }
 
 @media (max-width: 425px) {

@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../scss/log_in/log_in.css">
-    <title>Document</title>
+    <link rel="icon" href="/img/icons-railway-station.ico">
+    <link rel="stylesheet" href="/scss/log_in/log_in.css">
+    <title>Регистрация</title>
 </head>
 <body>
     <div class="wrapper">
         <h2>Регистрация</h2>
-        <form class="container_log_in">
-            <input class="input_login" type="text" placeholder="Логин">
-            <input class="input_password" type="text" placeholder="Пароль">
-            <input class="input_doble_password" type="text" placeholder="Повторите пароль">
-            <button class="button_booking">
+        <form method="post" action="/log_in" class="container_log_in">
+            <input class="input_login" name="login_user" type="text" placeholder="Логин">
+            <input class="input_password" name="password_user" type="password" placeholder="Пароль">
+            <input class="input_doble_password" name="second_password_user" type="password" placeholder="Повторите пароль">
+            <button type="submit" class="button_booking">
                 Зарегистрироваться
             </button>
+            <a href="/components/home.html">Домой</a>
         </form>
     </div>
 </body>
