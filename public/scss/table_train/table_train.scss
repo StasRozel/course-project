@@ -4,7 +4,13 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    height: 760px;
+}
 body {
+    height: 760px;
+    display: grid;
     background: #F5F5F5;
 }
 header {
@@ -101,7 +107,7 @@ section {
 }
 /*-----------------------FOOTER-------------------------*/
 footer {
-
+    align-self: end;
     @include footer_style();
 
 }

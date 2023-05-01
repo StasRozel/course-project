@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' https://course-project-jggs.onrender.com/" >
     <link rel="icon" href="/img/icons-railway-station.ico">
     <link rel="stylesheet" href="/scss/table_train/table_train.css">
     <link rel="stylesheet" href="/scss/media/media_table_train/media.css">
@@ -30,22 +31,22 @@
             </div>
         </div>
         <div class="burger-container-off">
-            <a href="table_train.html">Расписание поездов</a>
-            <a href="booking.html">Забронировать</a>
-            <a href="sign_in.html" class="sign-in">Войти</a>
+            <a href="/components/table_train.html">Расписание поездов</a>
+            <a href="/components/booking.html">Забронировать</a>
+            <a href="/components/sign_in.html" class="sign-in">Войти</a>
         </div>
     </header>
     <main>
         <section> 
             <h2>Расписание поездов и электричек</h2>
-            <form class="booking">
+            <div class="booking">
                 <input class="input_where_from" type="text" placeholder="Откуда">
                 <input class="input_where_to" type="text" placeholder="Куда">
                 <input class="input_date" type="time">
                 <button class="button_booking">
                     Забронировать
                 </button>
-            </form>
+            </div>
         </section>
         <section>
             <div class="table"></div>

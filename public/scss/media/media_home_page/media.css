@@ -55,6 +55,11 @@
   }
 }
 @media (max-width: 425px) {
+  header .menu a img {
+    width: 120px;
+    height: 42px;
+    margin-left: 20px;
+  }
   main .block-cards .cards {
     height: auto;
     display: grid;

@@ -21,7 +21,13 @@
   padding: 0;
 }
 
+html {
+  height: 760px;
+}
+
 body {
+  height: 760px;
+  display: grid;
   background: #F5F5F5;
 }
 
@@ -165,6 +171,7 @@ section h2 {
 
 /*-----------------------FOOTER-------------------------*/
 footer {
+  align-self: end;
   width: 100%;
   height: 50px;
   background: #FCC12B;

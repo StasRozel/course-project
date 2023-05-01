@@ -31,4 +31,8 @@
         <login>Stas</login>
         <password>0000</password>
     </user>
+    <user>
+        <login>Stas</login>
+        <password>qwerty</password>
+    </user>
 </users>

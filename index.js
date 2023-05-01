@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.listen(PORT);
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(__dirname + "/public/components/home.html");
 })
 
@@ -27,9 +27,6 @@ app.post('/log_in', (req, res) => {
     let login_user = req.body.login_user;
     let password_user = req.body.password_user;
     let second_password_user = req.body.second_password_user;
-
-    
-    
 
     if (login_user == "" || password_user == "" || second_password_user == "") {
         return res.redirect("/home");
@@ -55,7 +52,7 @@ app.post('/log_in', (req, res) => {
     }}
 })
 
-app.use(express.static('public'));
+app.use(express.static('public'))
 
 
 

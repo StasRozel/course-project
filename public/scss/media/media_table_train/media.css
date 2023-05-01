@@ -59,6 +59,15 @@
   }
 }
 @media (max-width: 425px) {
+  header .menu a img {
+    width: 120px;
+    height: 42px;
+    margin-left: 20px;
+  }
+  .booking input, .booking button {
+    width: 250px;
+    height: 40px;
+  }
   footer p {
     font-size: 10px;
   }

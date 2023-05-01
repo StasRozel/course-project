@@ -97,18 +97,20 @@
     transform: rotate(0deg);
   }
 }
-.burger-container-on, .burger-container-off {
+.burger-container-on,
+.burger-container-off {
   width: 100%;
   animation: menu_on 0.5s;
-  height: 40px;
+  height: 60px;
   background-color: #FFD567;
   text-align: center;
 }
-.burger-container-on a, .burger-container-off a {
+.burger-container-on a,
+.burger-container-off a {
   display: inline-block;
-  animation: menu_on 0.5s;
-  height: 40px;
+  height: 30px;
   margin-left: 30px;
+  margin-top: 20px;
   opacity: 1;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -125,7 +127,6 @@
   height: 0px;
 }
 .burger-container-off a {
-  animation: menu_off 0.5s;
   opacity: 0;
   height: 0px;
 }
@@ -136,18 +137,24 @@
     opacity: 0;
   }
   100% {
-    height: 40px;
+    height: 60px;
     opacity: 1;
   }
 }
 @keyframes menu_off {
   0% {
-    height: 40px;
+    height: 60px;
     opacity: 1;
   }
   100% {
     height: 0px;
     opacity: 0;
+  }
+}
+@media (max-width: 425px) {
+  header .burger-container-on a {
+    height: 10px;
+    margin-top: 5px;
   }
 }
 @media (max-width: 1024px) {
@@ -211,6 +218,15 @@
   }
 }
 @media (max-width: 425px) {
+  header .menu a img {
+    width: 120px;
+    height: 42px;
+    margin-left: 20px;
+  }
+  .booking input, .booking button {
+    width: 250px;
+    height: 40px;
+  }
   footer p {
     font-size: 10px;
   }
@@ -222,6 +238,7 @@
 
 body {
   display: grid;
+  grid-template-rows: 10% 90%;
   justify-items: center;
   align-items: center;
   height: 100vh;
@@ -246,7 +263,7 @@ body {
   margin-bottom: 10px;
   text-align: center;
 }
-.wrapper form {
+.wrapper div {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -254,17 +271,17 @@ body {
   margin-top: 10px;
   align-self: start;
 }
-.wrapper form .input_where_from,
-.wrapper form .input_date {
+.wrapper div .input_where_from,
+.wrapper div .input_date {
   justify-self: end;
   margin-right: 5%;
 }
-.wrapper form .input_where_to,
-.wrapper form .button_booking {
+.wrapper div .input_where_to,
+.wrapper div .button_booking {
   margin-left: 5%;
 }
-.wrapper form input,
-.wrapper form button {
+.wrapper div input,
+.wrapper div button {
   width: 80%;
   height: 40px;
   margin: 10px;
@@ -273,10 +290,71 @@ body {
   font-family: "IBM Plex Serif";
   font-weight: 600;
 }
-.wrapper form button {
+.wrapper div button {
   background-color: #FFD567;
 }
 
+.modal {
+  opacity: 0;
+  position: relative;
+  top: 0%;
+  z-index: 3;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+.modal p {
+  font-family: "IBM Plex Serif";
+}
+
+.in_account {
+  background-color: rgba(0, 218, 0, 0.752);
+}
+
+.error {
+  background-color: rgba(249, 27, 27, 0.752);
+}
+
+@keyframes anim_error {
+  15% {
+    opacity: 1;
+    transform: translateX(9px);
+  }
+  30% {
+    transform: translateX(-9px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateX(6px);
+  }
+  50% {
+    transform: translateX(-6px);
+  }
+  65% {
+    opacity: 1;
+    transform: translateX(3px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+}
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    top: 25%;
+  }
+  50% {
+    opacity: 1;
+    top: 25%;
+  }
+  100% {
+    opacity: 0;
+    top: 50%;
+  }
+}
 @media (max-width: 1024px) {
   .wrapper h2 {
     font-size: 18px;
@@ -290,18 +368,18 @@ body {
   .wrapper h2 {
     font-size: 14px;
   }
-  .wrapper form {
+  .wrapper div {
     height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
   }
-  .wrapper form .input_where_from, .wrapper form .input_date,
-  .wrapper form .input_where_to, .wrapper form .button_booking {
+  .wrapper div .input_where_from, .wrapper div .input_date,
+  .wrapper div .input_where_to, .wrapper div .button_booking {
     justify-self: center;
     margin-left: 10px;
     margin-right: 0px;
   }
-  .wrapper form button {
+  .wrapper div button {
     font-size: 10px;
   }
 }/*# sourceMappingURL=booking.css.map */
