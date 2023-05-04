@@ -7,23 +7,31 @@
 
 body {
 
+    display: -ms-grid;
+
     display: grid;
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     height: 100vh;
 
-    background: url('../../img/Minsk_railroad_station_2_1-transformed.png');
+    background: url('/img/вокзал_фон.png');
     background-repeat: no-repeat;
     background-size: cover;
     
 }
 
 .wrapper {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: 20% 80%;
     grid-template-rows: 20% 80%;
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     width: 60%;
     height: 300px;
@@ -34,7 +42,9 @@ body {
 
     h2 {
         font-family: 'IBM Plex Serif';
-        align-self: end;
+        -ms-flex-item-align: end;
+            -ms-grid-row-align: end;
+            align-self: end;
         margin-bottom: 20px;
         text-align: center;
     

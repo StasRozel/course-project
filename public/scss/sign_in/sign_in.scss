@@ -7,24 +7,34 @@
 
 body {
 
+    display: -ms-grid;
+
     display: grid;
+    -ms-grid-rows: 10% 90%;
     grid-template-rows: 10% 90%;
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+         align-items: center;
+         -ms-align-items: center;
 
     height: 100vh;
 
-    background: url('../../img/Minsk_railroad_station_2_1-transformed.png');
+    background: url('/img/вокзал_фон.png');
     background-repeat: no-repeat;
     background-size: cover;
     
 }
 
 .wrapper {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: 20% 80%;
     grid-template-rows: 20% 80%;
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     width: 60%;
     height: 300px;
@@ -35,7 +45,9 @@ body {
 
     h2 {
         font-family: 'IBM Plex Serif';
-        align-self: end;
+        -ms-flex-item-align: end;
+            -ms-grid-row-align: end;
+            align-self: end;
         margin-bottom: 20px;
         text-align: center;
     
@@ -72,52 +84,40 @@ body {
 
 }
 
- //@keyframes anim_error {
-//     0% {
-//         opacity: 0;
-//         right: 0%;
-//     } 
-//     10% {
-//         right: 2%;
-//         opacity: 1;
-//     }
-//     20% {
-//         right: 0%;
-//         left: 0%;
-//     }
-//     30% {
-//         left: 2%;
-//         opacity: 1;
-//     } 
-//     40% {
-//         right: 0%;
-//         left: 0%;
-//     }
-//     50% {
-//         right: 2%;
-//         opacity: 1;
-//     }
-//     60% {
-//         left: 0%;
-//         right: 0%;
-//     } 
-//     70% { 
-//         left: 2%;
-//         opacity: 1;
-//     }
-//     80% { 
-//         left: 0%;
-//         right: 0%;
-//     }
-//     90% {
-//         right: 2%;
-//         opacity: 0;
-//     }
-//     100% { 
-//         left: 0%;
-//         right: 0%;
-//     }
- //}
+
+
+@-webkit-keyframes anim_error {
+    15% {
+    opacity: 1;
+      -webkit-transform: translateX(9px);
+      transform: translateX(9px);
+    }
+    30% {
+      -webkit-transform: translateX(-9px);
+      transform: translateX(-9px);
+    }
+    40% {
+        opacity: 1;
+      -webkit-transform: translateX(6px);
+      transform: translateX(6px);
+    }
+    50% {
+      -webkit-transform: translateX(-6px);
+      transform: translateX(-6px);
+    }
+    65% {
+        opacity: 1;
+      -webkit-transform: translateX(3px);
+      transform: translateX(3px);
+    }
+    100% {
+        opacity: 0;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+
 
 @keyframes anim_error {
     15% {
@@ -149,6 +149,24 @@ body {
       transform: translateX(0);
     }
   }
+  
+
+@-webkit-keyframes anim {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        top: 25%;
+    }
+    50% {
+        opacity: 1;
+        top: 25%;
+    }
+    100% {
+        opacity: 0;
+        top: 50%;
+    }
+}
   
 
 @keyframes anim {

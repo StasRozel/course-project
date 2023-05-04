@@ -6,23 +6,31 @@
 }
 
 body {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: 10% 90%;
     grid-template-rows: 10% 90%;
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     height: 100vh;
 
-    background: url('../../img/фото4_1-transformed.png');
+    background: url('/img/перон_фон.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .wrapper {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: 30% 70%;
     grid-template-rows: 30% 70%;
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     width: 60%;
     height: 260px;
@@ -33,7 +41,9 @@ body {
 
     h2 {
         font-family: 'IBM Plex Serif';
-        align-self: end;
+        -ms-flex-item-align: end;
+            -ms-grid-row-align: end;
+            align-self: end;
         margin-bottom: 10px;
         text-align: center;
     }
@@ -41,17 +51,25 @@ body {
     div{
         width: 100%;
 
+        display: -ms-grid;
+
         display: grid;
+        -ms-grid-columns:  (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+        -ms-grid-template-rows: repeat(2, 1fr);
+        -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
 
         margin-top: 10px;
 
-        align-self: start;
+        -ms-grid-row-align: start;
+
+            align-self: start;
 
         .input_where_from,
         .input_date {
-            justify-self: end;
+            -ms-grid-column-align: end;
+                justify-self: end;
             margin-right: 5%;
         }
 
@@ -78,6 +96,26 @@ body {
             background-color: #FFD567;
         }
     }
+
+    div > *:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1
+    }
+
+    div > *:nth-child(2){
+        -ms-grid-row: 1;
+        -ms-grid-column: 2
+    }
+
+    div > *:nth-child(3){
+        -ms-grid-row: 2;
+        -ms-grid-column: 1
+    }
+
+    div > *:nth-child(4){
+        -ms-grid-row: 2;
+        -ms-grid-column: 2
+    }
 }
 
 .modal {
@@ -103,6 +141,37 @@ body {
     background-color: rgba(249, 27, 27, 0.752);
 
 }
+
+@-webkit-keyframes anim_error {
+    15% {
+    opacity: 1;
+      -webkit-transform: translateX(9px);
+      transform: translateX(9px);
+    }
+    30% {
+      -webkit-transform: translateX(-9px);
+      transform: translateX(-9px);
+    }
+    40% {
+        opacity: 1;
+      -webkit-transform: translateX(6px);
+      transform: translateX(6px);
+    }
+    50% {
+      -webkit-transform: translateX(-6px);
+      transform: translateX(-6px);
+    }
+    65% {
+        opacity: 1;
+      -webkit-transform: translateX(3px);
+      transform: translateX(3px);
+    }
+    100% {
+        opacity: 0;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
 
 @keyframes anim_error {
     15% {
@@ -136,6 +205,24 @@ body {
   }
   
 
+@-webkit-keyframes anim {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        top: 25%;
+    }
+    50% {
+        opacity: 1;
+        top: 25%;
+    }
+    100% {
+        opacity: 0;
+        top: 50%;
+    }
+}
+  
+
 @keyframes anim {
     0% {
         opacity: 0;
@@ -165,6 +252,7 @@ body {
 
 @media (max-width: 425px) {
     .wrapper {
+        -ms-grid-rows: 20% 80%;
         grid-template-rows: 20% 80%;
 
         height: 340px;
@@ -175,12 +263,17 @@ body {
         div {
             height: auto;
 
+            -ms-grid-columns: 1fr;
+
             grid-template-columns: 1fr;
+            -ms-grid-template-rows: repeat(4, 1fr);
+            -ms-grid-rows: (1fr)[4];
             grid-template-rows: repeat(4, 1fr);
 
             .input_where_from, .input_date,
             .input_where_to, .button_booking {
-                justify-self: center;
+                -ms-grid-column-align: center;
+                    justify-self: center;
                 margin-left: 10px;
                 margin-right: 0px;
             }
@@ -188,6 +281,26 @@ body {
             button {
                 font-size: 10px;
             }
+        }
+
+        div > *:nth-child(1) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1
+        }
+
+        div > *:nth-child(2) {
+            -ms-grid-row: 2;
+            -ms-grid-column: 1
+        }
+
+        div > *:nth-child(3) {
+            -ms-grid-row: 3;
+            -ms-grid-column: 1
+        }
+
+        div > *:nth-child(4) {
+            -ms-grid-row: 4;
+            -ms-grid-column: 1
         }
     }
 }

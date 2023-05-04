@@ -62,7 +62,7 @@
     <train>
         <time>15:35</time>
         <trainImg>../img/train.png</trainImg>
-        <way>Минск - Могелёв</way>
+        <way>Минск - Могилёв</way>
     </train>
     <train>
         <time>16:13</time>
@@ -107,6 +107,6 @@
     <train>
         <time>00:01</time>
         <trainImg>../img/train.png</trainImg>
-        <way>Минск - Могелёв</way>
+        <way>Минск - Могилёв</way>
     </train>
 </container>

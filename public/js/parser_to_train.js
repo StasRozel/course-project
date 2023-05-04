@@ -33,22 +33,29 @@ let parser = (xmlString => {
   })
 
   async function parseXML() {
+    
     let a = await fetch('/xml/train_schedule.xml');
     let xmlString = await a.text();
     parser(xmlString);
 
     document.querySelector('.button_booking').onclick = () => {
-      let str_way;
+      let str_way, flag = true;
       let date_value = document.querySelector('.input_date').value;
       let where_from = document.querySelector('.input_where_from').value;
       let where_to = document.querySelector('.input_where_to').value;
       times_arr.forEach((element, index) => {
         str_way = ways_arr[index].split(' ');
-        if(element != date_value && str_way[2] != where_to && where_from != "") {
+        if(element != date_value || str_way[2] != where_to || str_way[0] != where_from) {
           
           document.querySelectorAll('.rows')[index].style.display = 'none';
+        } else {
+          document.querySelectorAll('.rows')[index].style.display = 'grid';
+          flag = false;
         }
       })
+      if (flag) {
+        document.querySelector('.table').innerHTML = "<p class='error_message'>Данного маршрута нет</p>";
+      }
     };
 
   }
