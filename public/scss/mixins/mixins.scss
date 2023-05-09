@@ -2,51 +2,55 @@
 
 @mixin header_style {
     .menu {
-       width: 100%;
-       height: 80px;
-       background-color: #FCC12B;
-       font-family: Roboto;
-       line-height: 37px;
+        width: 100%;
+        height: 80px;
+        background-color: #FCC12B;
+        font-family: Roboto;
+        line-height: 37px;
 
-       display: grid;
-       grid-template-columns: 270px auto auto 55px;
-       align-items: center;
-        
-       img {
-           width: 200px;
-           height: 70px;
-           margin-left: 40px;
-       }
+        display: grid;
+        grid-template-columns: 270px auto auto 55px;
+        align-items: center;
 
-       h3 {
-            justify-self:start;
+        img {
+            width: 200px;
+            height: 70px;
+            margin-left: 40px;
+        }
+
+        h3 {
+            justify-self: start;
             user-select: none;
-       }
+        }
 
-       .sign-in {
+        .sign-in {
             margin-right: 40px;
-       }
+        }
 
-       
-   }
-   .menu-desktop {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-   
-   a {
-    width: auto;
-    height: auto;
 
-    justify-self: center;
+    }
 
-    user-select: none;
+    .menu-desktop {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
 
-    text-decoration: none;
-    color: #000;
-    font-family: 'Roboto';
-    font-weight: bold;
-}
-}
+        a {
+            width: auto;
+            height: auto;
+
+            justify-self: center;
+
+            user-select: none;
+
+            text-decoration: none;
+            color: #000;
+            font-family: 'Roboto';
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+    }
+
     .img-header {
         width: 100%;
         height: 760px;
@@ -54,7 +58,7 @@
         background-position: center center;
         background-size: cover;
         background-position: center;
-    
+
         p {
             position: relative;
             font-family: 'IBM Plex Serif';
@@ -62,15 +66,15 @@
             font-weight: 400;
             color: #fff;
         }
- 
+
         .text-header {
             width: 78%;
             left: 40px;
-            top:50%;
+            top: 50%;
             font-size: 4.5vw;
- 
+
         }
- 
+
         .booking {
             width: 60%;
             left: 40px;
@@ -81,40 +85,42 @@
 }
 
 @mixin form {
-        width: 100%;
+    width: 100%;
 
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
 
-        input,
-        button {
-            width: 80%;
-            height: 40px;
+    input,
+    button {
+        width: 80%;
+        height: 40px;
 
-            justify-self: center;
+        justify-self: center;
 
-            margin: 10px;
+        margin: 10px;
 
-            border: 0;
-            border-radius: 10px;
+        border: 0;
+        border-radius: 10px;
 
-            font-family: 'IBM Plex Serif';
-            font-weight: 600;
-        }
+        font-family: 'IBM Plex Serif';
+        font-weight: 600;
 
-        button {
-            width: 50%;
-            background-color: #FFD567; 
-        }
+        cursor: pointer;
+    }
 
-        a {
-            text-decoration: none;
-            color: #000;
-            font-family: 'IBM Plex Serif';
+    button {
+        width: 50%;
+        background-color: #FFD567;
+    }
 
-            justify-self: center;
-        }
+    a {
+        text-decoration: none;
+        color: #000;
+        font-family: 'IBM Plex Serif';
+
+        justify-self: center;
+    }
 }
 
 @mixin footer_style {

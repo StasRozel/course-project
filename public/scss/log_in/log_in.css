@@ -295,6 +295,7 @@ body {
   border-radius: 10px;
   font-family: "IBM Plex Serif";
   font-weight: 600;
+  cursor: pointer;
 }
 .wrapper form button {
   width: 50%;

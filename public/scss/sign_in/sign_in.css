@@ -297,6 +297,7 @@ body {
   border-radius: 10px;
   font-family: "IBM Plex Serif";
   font-weight: 600;
+  cursor: pointer;
 }
 .wrapper .container_log_in button {
   width: 50%;

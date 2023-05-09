@@ -74,6 +74,7 @@ header .menu-desktop a {
   color: #000;
   font-family: "Roboto";
   font-weight: bold;
+  cursor: pointer;
 }
 header .img-header {
   width: 100%;
@@ -132,6 +133,7 @@ section h2 {
   border-radius: 10px;
   font-family: "IBM Plex Serif";
   font-weight: 600;
+  cursor: pointer;
 }
 .booking button {
   background-color: #FCC12B;

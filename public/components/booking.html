@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/icons-railway-station.ico">
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' https://course-project-jggs.onrender.com/" >
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src * 'unsafe-inline' 'unsafe-eval' https://course-project-jggs.onrender.com/">
     <title>Бронирование</title>
     <link rel="stylesheet" href="/scss/booking/booking.css">
 </head>
@@ -18,11 +19,26 @@
         <div>
             <input class="input_where_from" type="text" placeholder="Откуда">
             <input class="input_where_to" type="text" placeholder="Куда">
+            <button class="button_search">
+                Найти
+            </button>
             <input class="input_date" type="time">
+            <select class="number_passangers">
+                <option>Число пассажиров</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+            <p class="summa">Сумма билета: </p>
             <button class="button_booking">
                 Забронировать
             </button>
-        </в>
+
+        </div>
     </div>
     <script src="/js/booking.js"></script>
 </body>

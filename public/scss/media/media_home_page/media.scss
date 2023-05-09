@@ -50,9 +50,17 @@
         -ms-grid-column-align: center;
             justify-self: center;
     }
+    .info {
+        height: 100%;
+        grid-row-gap: 0px;
+
+        .number {
+            justify-self: end;
+        }
+    }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
     
             header {
                 .menu-desktop {

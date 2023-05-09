@@ -25,15 +25,15 @@ body {
 .wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 30% 70%;
-    grid-template-rows: 30% 70%;
+    -ms-grid-rows: 20% 80%;
+    grid-template-rows: 20% 80%;
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
 
     width: 60%;
-    height: 260px;
+    height: 30%;
 
     background-color: #FCC12B;
     border-radius: 30px;
@@ -54,17 +54,27 @@ body {
         display: -ms-grid;
 
         display: grid;
-        -ms-grid-columns:  (1fr)[2];
+        
         grid-template-columns: repeat(2, 1fr);
-        -ms-grid-template-rows: repeat(2, 1fr);
-        -ms-grid-rows: (1fr)[2];
+       
         grid-template-rows: repeat(2, 1fr);
 
         margin-top: 10px;
 
-        -ms-grid-row-align: start;
+        
 
             align-self: start;
+
+        .button_search {
+            grid-column: 1/3;
+            margin: 0;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .input_date {
+            display: none;
+        }
 
         .input_where_from,
         .input_date {
@@ -79,7 +89,8 @@ body {
         }
 
         input,
-        button {
+        button,
+        select {
             width: 80%;
             height: 40px;
 
@@ -90,10 +101,30 @@ body {
 
             font-family: 'IBM Plex Serif';
             font-weight: 600;
-        }
 
+            cursor: pointer;
+        }
+        select {
+            margin-left: 25px;
+            display: none;
+        }
         button {
             background-color: #FFD567;
+            justify-self: center;
+        }
+
+        .button_booking {
+            grid-column: 1/3;
+            margin: 0;
+            display: none;
+        }
+
+        .summa {
+            font-family: 'IBM Plex Serif';
+            font-weight: 600;
+            grid-column: 1/3;
+            justify-self: center;
+            display: none;
         }
     }
 

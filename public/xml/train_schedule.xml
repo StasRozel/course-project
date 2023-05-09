@@ -3,110 +3,132 @@
         <time>04:29</time>
         <trainImg>../img/electric-train.png</trainImg>
         <way>Минск — Борисов</way>
+        <price>10</price>
     </train>
     <train>
         <time>04:56</time>
         <trainImg>../img/train.png</trainImg>
         <way>Москва — Калининград</way>
+        <price>134</price>
     </train>
     <train>
         <time>05:30</time>
         <trainImg>../img/electric-train.png</trainImg>
         <way>Минск — Красное Знамя</way>
+        <price>16</price>
     </train>
     <train>
         <time>05:40</time>
         <trainImg>../img/electric-train.png</trainImg>
-        <way>Минск - Станция</way>
+        <way>Минск - Городея</way>
+        <price>6</price>
     </train>
     <train>
         <time>06:20</time>
         <trainImg>../img/train.png</trainImg>
         <way>Минск - Москва</way>
+        <price>100</price>
     </train>
     <train>
         <time>07:42</time>
         <trainImg>../img/train.png</trainImg>
         <way>Минск - Орша</way>
+        <price>8</price>
     </train>
     <train>
         <time>08:28</time>
         <trainImg>../img/electric-train.png</trainImg>
         <way>Минск - Столбцы</way>
+        <price>8</price>
     </train>
     <train>
         <time>09:20</time>
         <trainImg>../img/train.png</trainImg>
         <way>Минск - Гомель</way>
+        <price>15</price>
     </train>
     <train>
         <time>10:35</time>
         <trainImg>../img/train.png</trainImg>
         <way>Минск - Брест</way>
+        <price>16</price>
     </train>
     <train>
         <time>11:25</time>
         <trainImg>../img/train.png</trainImg>
         <way>Минск - Орша</way>
+        <price>12</price>
     </train>
     <train>
         <time>12:58</time>
         <trainImg>../img/electric-train.png</trainImg>
         <way>Минск — Руденск</way>
+        <price>11</price>
     </train>
     <train>
         <time>14:01</time>
         <trainImg>../img/train.png</trainImg>
         <way>Минск — Калинковичи</way>
+        <price>9</price>
     </train>
     <train>
         <time>15:35</time>
         <trainImg>../img/train.png</trainImg>
         <way>Минск - Могилёв</way>
+        <price>15</price>
     </train>
     <train>
         <time>16:13</time>
         <trainImg>../img/train.png</trainImg>
         <way>Минск - Орша</way>
+        <price>9</price>
     </train>
     <train>
         <time>17:25</time>
         <trainImg>../img/train.png</trainImg>
         <way>Минск - Полоцк</way>
+        <price>12</price>
     </train>
     <train>
         <time>18:14</time>
         <trainImg>../img/electric-train.png</trainImg>
         <way>Минск — Гудогай</way>
+        <price>6</price>
     </train>
     <train>
         <time>19:25</time>
         <trainImg>../img/electric-train.png</trainImg>
         <way>Минск — Молодечно</way>
+        <price>3</price>
     </train>
     <train>
         <time>20:41</time>
         <trainImg>../img/train.png</trainImg>
         <way>Минск - Орша</way>
+        <price>11</price>
     </train>
     <train>
         <time>21:34</time>
         <trainImg>../img/electric-train.png</trainImg>
         <way>Минск - Полоцк</way>
+        <price>12</price>
     </train>
     <train>
         <time>22:49</time>
         <trainImg>../img/train.png</trainImg>
         <way>Минск - Калинковичи</way>
+        <price>12</price>
     </train>
     <train>
         <time>23:23</time>
         <trainImg>../img/train.png</trainImg>
         <way>Минск - Витебск</way>
+        <price>17</price>
     </train>
     <train>
         <time>00:01</time>
         <trainImg>../img/train.png</trainImg>
         <way>Минск - Могилёв</way>
+        <price>20</price>
     </train>
 </container>
