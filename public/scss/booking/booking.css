@@ -17,6 +17,24 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: Roboto;
+  src: url("../../fonts/Roboto-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: url("../../fonts/IBMPlexSerif-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../fonts/Inter-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 .burger-menu {
   width: 50px;
   height: 40px;
@@ -98,6 +116,9 @@
 }
 .burger-container-on,
 .burger-container-off {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   width: 100%;
   animation: menu_on 0.5s;
   height: 60px;
@@ -106,7 +127,6 @@
 }
 .burger-container-on a,
 .burger-container-off a {
-  display: inline-block;
   height: 30px;
   margin-left: 30px;
   margin-top: 20px;
@@ -118,6 +138,25 @@
   color: #000;
   font-family: Roboto;
   font-weight: bold;
+}
+.burger-container-on .sign_out_block,
+.burger-container-off .sign_out_block {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  width: 130px;
+}
+.burger-container-on .sign_out_block .avatar,
+.burger-container-off .sign_out_block .avatar {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  border: 2px solid #565656;
+  border-radius: 5px;
+}
+.burger-container-on .sign_out_block a,
+.burger-container-off .sign_out_block a {
+  margin-top: 5px;
 }
 
 .burger-container-off {

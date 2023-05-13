@@ -16,12 +16,12 @@
 
 <body>
     <header>
-        <div class="menu">
+        <nav class="menu">
             <a href="/components/home.html"><img src="/img/вокзал.svg" alt="Иконка вокзала"></a>
             <h3>Железнодорожный вокзал</h3>
             <div class="menu-desktop">
                 <a href="/components/table_train.html">Расписание поездов</a>
-                <a href="/components/booking.html">Забронировать</a>
+                <a href="/components/booking.html" class="booking-menu">Забронировать</a>
                 <a href="/components/sign_in.html" class="sign-in">Войти</a>
             </div>
             <div class="burger-menu">
@@ -29,12 +29,12 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-        </div>
-        <div class="burger-container-off">
+        </nav>
+        <nav class="burger-content burger-container-off">
             <a href="/components/table_train.html">Расписание поездов</a>
-            <a href="/components/booking.html">Забронировать</a>
-            <a href="/components/sign_in.html" class="sign-in">Войти</a>
-        </div>
+            <a href="/components/booking.html" lass="booking">Забронировать</a>
+            <a href="/components/sign_in.html" class="sign-in sign-in-mobile">Войти</a>
+        </nav>
 
         <div class="img-header">
             <p class="text-header">
@@ -99,8 +99,9 @@
             © 2018 - 2023 Все права защищены Железнодорожный вокзал «Минск-Пассажирский».
         </p>
     </footer>
-
-    <script src="/js/main.js"></script>
+    <div class="modal"></div>
+    <script src="/js/burger_menu.js"></script>
+    <script src="/js/check_user.js"></script>
 </body>
 
 </html>

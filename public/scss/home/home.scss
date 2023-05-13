@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 @import '../mixins/mixins.scss';
 
 * {
@@ -233,3 +226,53 @@ header {
 footer {
     @include footer_style();
 }
+
+.modal {
+   
+    opacity: 0;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    z-index: 3;
+    
+    
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(249, 27, 27, 0.752);
+    p {
+        font-family: "IBM Plex Serif";
+    }
+}
+
+@keyframes anim_error {
+    15% {
+    opacity: 1;
+      -webkit-transform: translateX(9px);
+      transform: translateX(9px);
+    }
+    30% {
+      -webkit-transform: translateX(-9px);
+      transform: translateX(-9px);
+    }
+    40% {
+        opacity: 1;
+      -webkit-transform: translateX(6px);
+      transform: translateX(6px);
+    }
+    50% {
+      -webkit-transform: translateX(-6px);
+      transform: translateX(-6px);
+    }
+    65% {
+        opacity: 1;
+      -webkit-transform: translateX(3px);
+      transform: translateX(3px);
+    }
+    100% {
+        opacity: 0;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  

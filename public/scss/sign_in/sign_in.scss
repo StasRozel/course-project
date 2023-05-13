@@ -84,41 +84,6 @@ body {
 
 }
 
-
-
-@-webkit-keyframes anim_error {
-    15% {
-    opacity: 1;
-      -webkit-transform: translateX(9px);
-      transform: translateX(9px);
-    }
-    30% {
-      -webkit-transform: translateX(-9px);
-      transform: translateX(-9px);
-    }
-    40% {
-        opacity: 1;
-      -webkit-transform: translateX(6px);
-      transform: translateX(6px);
-    }
-    50% {
-      -webkit-transform: translateX(-6px);
-      transform: translateX(-6px);
-    }
-    65% {
-        opacity: 1;
-      -webkit-transform: translateX(3px);
-      transform: translateX(3px);
-    }
-    100% {
-        opacity: 0;
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-    }
-  }
-
-
-
 @keyframes anim_error {
     15% {
     opacity: 1;

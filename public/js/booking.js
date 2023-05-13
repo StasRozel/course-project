@@ -44,10 +44,10 @@ async function parseXML() {
   let number_passangers = document.querySelector('.number_passangers');
   number_passangers.onchange = () => {
 
-    for (let i = 0; i <= 6; i++) {
+    for (let i = 1; i <= 7; i++) {
       if (number_passangers.value == i) {
 
-        let price_two = price + (i * 1.2);
+        let price_two = price * i;
         document.querySelector('.summa').innerHTML = `Cумма билета: ${price_two} руб`;
         flag_list = true;  
 

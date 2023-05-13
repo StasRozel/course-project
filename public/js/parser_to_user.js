@@ -6,6 +6,11 @@ let table = (arr_tag, arr) => {
   return arr;
 }
 
+let sign_up_user = false;
+if (localStorage.getItem('check_user')!= undefined) {
+  sign_up_user = JSON.parse(localStorage.getItem('check_user'));
+}
+
 async function parseUsersXML() {
   let a = await fetch('/xml/users.xml');
   let xmlString = await a.text();
@@ -24,11 +29,12 @@ async function parseUsersXML() {
     password_arr = table(passwords, password_arr);
 
     document.querySelector('.button_log_in').onclick = () => {
+      
       let flag = true;
       let modal = document.querySelector('.modal');
       for (let i = 0; i < logins_arr.length; i++) {
         if (input_login.value == logins_arr[i] &&
-          input_password.value == password_arr[i]) {
+          input_password.value == password_arr[i] && !sign_up_user) {
           modal.className = 'modal in_account';
           document.querySelector('.in_account').innerHTML = '<p>Вы успешно вошли в аккаунт&#9989;</p>' 
           document.querySelector('.in_account').style.animation = "anim 2s";
@@ -36,7 +42,9 @@ async function parseUsersXML() {
           setTimeout(() => {
             modal.style.animation = "";
           }, 2000);
-          
+          window.setTimeout(() => {window.location.href = "http://localhost:3000/components/home.html"}, 3000);
+          sign_up_user = true;
+          localStorage.setItem('check_user', sign_up_user.toString());
           flag = false;
 
           input_login.value = "";

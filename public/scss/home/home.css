@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 @font-face {
   font-family: Roboto;
   src: url("../../fonts/Roboto-Light.ttf") format("truetype");
@@ -76,6 +70,19 @@ header .menu-desktop a {
   font-family: "Roboto";
   font-weight: bold;
   cursor: pointer;
+}
+header .menu-desktop .sign_out_block {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  width: 130px;
+}
+header .menu-desktop .sign_out_block .avatar {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  border: 2px solid #565656;
+  border-radius: 5px;
 }
 header .img-header {
   width: 100%;
@@ -282,4 +289,44 @@ footer p {
   text-align: center;
   font-family: "IBM Plex Serif";
   font-size: 15px;
+}
+
+.modal {
+  opacity: 0;
+  position: absolute;
+  top: 5%;
+  left: 40%;
+  z-index: 3;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(249, 27, 27, 0.752);
+}
+.modal p {
+  font-family: "IBM Plex Serif";
+}
+
+@keyframes anim_error {
+  15% {
+    opacity: 1;
+    transform: translateX(9px);
+  }
+  30% {
+    transform: translateX(-9px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateX(6px);
+  }
+  50% {
+    transform: translateX(-6px);
+  }
+  65% {
+    opacity: 1;
+    transform: translateX(3px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+  }
 }/*# sourceMappingURL=home.css.map */

@@ -16,24 +16,24 @@
 
 <body>
     <header>
-        <div class="menu">
+        <nav class="menu">
             <a href="/components/home.html"><img src="/img/вокзал.svg" alt="Иконка вокзала"></a>
             <h3>Железнодорожный вокзал</h3>
-            <nav class="menu-desktop">
+            <div class="menu-desktop">
                 <a href="/components/table_train.html">Расписание поездов</a>
-                <a href="/components/booking.html">Забронировать</a>
+                <a href="/components/booking.html" class="booking-menu">Забронировать</a>
                 <a href="/components/sign_in.html" class="sign-in">Войти</a>
-            </nav>
+            </div>
             <div class="burger-menu">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-        </div>
-        <nav class="burger-container-off">
+        </nav>
+        <nav class="burger-content burger-container-off">
             <a href="/components/table_train.html">Расписание поездов</a>
-            <a href="/components/booking.html">Забронировать</a>
-            <a href="/components/sign_in.html" class="sign-in">Войти</a>
+            <a href="/components/booking.html" lass="booking">Забронировать</a>
+            <a href="/components/sign_in.html" class="sign-in sign-in-mobile">Войти</a>
         </nav>
     </header>
     <main>
@@ -42,7 +42,6 @@
             <div class="booking">
                 <input class="input_where_from" type="text" placeholder="Откуда">
                 <input class="input_where_to" type="text" placeholder="Куда">
-                <input class="input_date" type="time">
                 <button class="button_booking">
                     Забронировать
                 </button>
@@ -57,9 +56,11 @@
             © 2018 - 2023 Все права защищены Железнодорожный вокзал «Минск-Пассажирский».
         </p>
     </footer>
-    
+
+    <div class="modal"></div>
     <script src="/js/parser_to_train.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="/js/burger_menu.js"></script>
+    <script src="/js/check_user.js"></script>
     
 </body>
 

@@ -1,5 +1,14 @@
 @import '../fonts_family/fonts';
 
+@mixin avatar {
+    
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border: 2px solid #565656;
+    border-radius: 5px;
+}
+
 @mixin header_style {
     .menu {
         width: 100%;
@@ -47,6 +56,17 @@
             font-family: 'Roboto';
             font-weight: bold;
             cursor: pointer;
+        }
+
+        .sign_out_block {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            align-items: center;
+
+            width: 130px;
+            .avatar {
+                @include avatar();
+            }
         }
 
     }

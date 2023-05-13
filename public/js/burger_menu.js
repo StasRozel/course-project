@@ -5,13 +5,13 @@ let counter = 0;
 burgerMenu.onclick = () => {
     counter++;
     if(counter % 2) {
-        burgerContainer.className = "burger-container-on";
+        burgerContainer.className = "burger-content burger-container-on";
         
         line.forEach((el, i) => {
             el.className = "line open-" +(i + 1);
         })
     } else if (!(counter % 2)) {
-        burgerContainer.className = "burger-container-off";
+        burgerContainer.className = "burger-content burger-container-off";
         line.forEach((el, i) => {
             el.className = "line close-" + (i + 1);
         })

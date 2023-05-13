@@ -40,12 +40,11 @@ let parser = (xmlString => {
 
     document.querySelector('.button_booking').onclick = () => {
       let str_way, flag = true;
-      let date_value = document.querySelector('.input_date').value;
       let where_from = document.querySelector('.input_where_from').value;
       let where_to = document.querySelector('.input_where_to').value;
       times_arr.forEach((element, index) => {
         str_way = ways_arr[index].split(' ');
-        if(element != date_value || str_way[2] != where_to || str_way[0] != where_from) {
+        if(str_way[2] != where_to || str_way[0] != where_from) {
           
           document.querySelectorAll('.rows')[index].style.display = 'none';
         } else {
@@ -54,7 +53,10 @@ let parser = (xmlString => {
         }
       })
       if (flag) {
-        document.querySelector('.table').innerHTML = "<p class='error_message'>Данного маршрута нет</p>";
+        document.querySelector('.table').innerHTML = `
+        <p class='error_message'>Данного маршрута нет</p>
+        <button class = "open_list">Открыть весь список<button>
+        `;
       }
     };
 
