@@ -119,6 +119,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  align-items: center;
   width: 100%;
   animation: menu_on 0.5s;
   height: 60px;
@@ -127,9 +128,7 @@
 }
 .burger-container-on a,
 .burger-container-off a {
-  height: 30px;
-  margin-left: 30px;
-  margin-top: 20px;
+  height: 15px;
   opacity: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -139,24 +138,25 @@
   font-family: Roboto;
   font-weight: bold;
 }
+.burger-container-on .schedule, .burger-container-on .booking-mob,
+.burger-container-off .schedule,
+.burger-container-off .booking-mob {
+  margin-bottom: 10px;
+}
 .burger-container-on .sign_out_block,
 .burger-container-off .sign_out_block {
   display: grid;
   grid-template-columns: 60% 40%;
   align-items: center;
   width: 130px;
+  margin-bottom: 10px;
 }
 .burger-container-on .sign_out_block .avatar,
 .burger-container-off .sign_out_block .avatar {
   width: 30px;
   height: 30px;
-  margin-left: 10px;
   border: 2px solid #565656;
   border-radius: 5px;
-}
-.burger-container-on .sign_out_block a,
-.burger-container-off .sign_out_block a {
-  margin-top: 5px;
 }
 
 .burger-container-off {
@@ -190,8 +190,8 @@
 }
 @media (max-width: 425px) {
   header .burger-container-on a {
-    height: 10px;
-    margin-top: 5px;
+    height: 15px;
+    font-size: 12px;
   }
 }
 @media (max-width: 1024px) {
@@ -230,8 +230,7 @@
   section .booking {
     display: grid;
     grid-template-columns: 1fr;
-    -ms-grid-template-rows: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
   section .booking .input_where_from, section .booking .input_date,
   section .booking .input_where_to, section .booking .button_booking {
@@ -258,7 +257,10 @@
 }
 @media (max-width: 585px) {
   header .menu img {
-    margin-left: 0px;
+    margin-left: 20px;
+  }
+  header .menu .burger-menu {
+    margin-right: 20px;
   }
   .table .rows {
     width: 100%;
@@ -309,7 +311,7 @@ body {
   justify-items: center;
   align-items: center;
   width: 60%;
-  height: 30%;
+  height: 40%;
   background-color: #FCC12B;
   border-radius: 30px;
 }
@@ -341,10 +343,6 @@ body {
   justify-self: end;
   margin-right: 5%;
 }
-.wrapper div .input_where_to,
-.wrapper div .button_booking {
-  margin-left: 5%;
-}
 .wrapper div input,
 .wrapper div button,
 .wrapper div select {
@@ -358,7 +356,6 @@ body {
   cursor: pointer;
 }
 .wrapper div select {
-  margin-left: 25px;
   display: none;
 }
 .wrapper div button {
@@ -462,16 +459,14 @@ body {
 @media (max-width: 425px) {
   .wrapper {
     grid-template-rows: 20% 80%;
-    height: 340px;
+    height: 50%;
   }
   .wrapper h2 {
     font-size: 14px;
   }
   .wrapper div {
-    height: auto;
     grid-template-columns: 1fr;
-    -ms-grid-template-rows: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 30px 1fr;
   }
   .wrapper div .input_where_from, .wrapper div .input_date,
   .wrapper div .input_where_to, .wrapper div .button_booking {
@@ -479,8 +474,18 @@ body {
     margin-left: 10px;
     margin-right: 0px;
   }
+  .wrapper div select {
+    justify-self: center;
+    margin-left: 15px;
+  }
   .wrapper div button {
     font-size: 10px;
+  }
+  .wrapper div input, .wrapper div button {
+    grid-column: 1/3;
+  }
+  .wrapper div .summa {
+    height: 20;
   }
   .wrapper div > *:nth-child(1) {
     -ms-grid-row: 1;

@@ -33,7 +33,7 @@ body {
             align-items: center;
 
     width: 60%;
-    height: 30%;
+    height: 40%;
 
     background-color: #FCC12B;
     border-radius: 30px;
@@ -61,9 +61,7 @@ body {
 
         margin-top: 10px;
 
-        
-
-            align-self: start;
+        align-self: start;
 
         .button_search {
             grid-column: 1/3;
@@ -83,10 +81,6 @@ body {
             margin-right: 5%;
         }
 
-        .input_where_to,
-        .button_booking {
-            margin-left: 5%;
-        }
 
         input,
         button,
@@ -104,8 +98,7 @@ body {
 
             cursor: pointer;
         }
-        select {
-            margin-left: 25px;
+        select {    
             display: none;
         }
         button {
@@ -283,23 +276,22 @@ body {
 
 @media (max-width: 425px) {
     .wrapper {
-        -ms-grid-rows: 20% 80%;
+        -ms-grid-rows: 10% 90%;
         grid-template-rows: 20% 80%;
 
-        height: 340px;
+        height: 50%;
         h2 {
             font-size: 14px;
         }
 
         div {
-            height: auto;
+        
 
             -ms-grid-columns: 1fr;
 
             grid-template-columns: 1fr;
-            -ms-grid-template-rows: repeat(4, 1fr);
             -ms-grid-rows: (1fr)[4];
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 30px 1fr;
 
             .input_where_from, .input_date,
             .input_where_to, .button_booking {
@@ -309,9 +301,23 @@ body {
                 margin-right: 0px;
             }
 
+            select {
+                justify-self: center;
+                margin-left: 15px; 
+            }
+
             button {
                 font-size: 10px;
             }
+
+            input, button {
+                grid-column: 1/3;
+            }
+
+            .summa {
+                height: 20;
+            }
+         
         }
 
         div > *:nth-child(1) {

@@ -177,6 +177,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+    align-items: center;
     width: 100%;
     -webkit-animation: menu_on .5s;
             animation: menu_on .5s;
@@ -187,9 +188,8 @@
     
     
     a { 
-        height: 30px;
-        margin-left: 30px;
-        margin-top: 20px;
+        height: 15px;
+
         opacity: 1;
         -webkit-user-select: none;
            -moz-user-select: none;
@@ -201,20 +201,25 @@
         color: #000;
         font-family: Roboto;
         font-weight: bold;
+
     }
+
+    .schedule, .booking-mob {
+        margin-bottom: 10px;
+    }
+
     .sign_out_block {
         display: grid;
         grid-template-columns: 60% 40%;
         align-items: center;
 
         width: 130px;
+
+        margin-bottom: 10px;
         .avatar {
             @include avatar(); 
         } 
 
-        a {
-            margin-top: 5px;
-        }
     }
 }
 
@@ -290,11 +295,13 @@
     header {
         .burger-container-on {
             a {
-                height: 10px;
-                margin-top: 5px;
+                height: 15px;
+
+                font-size: 12px;
             }
         }
     }
 
 }
+
 

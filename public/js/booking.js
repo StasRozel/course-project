@@ -5,6 +5,15 @@ let table = (arr_tag, arr) => {
   }
   return arr;
 }
+
+let size_win = () => {
+  if (document.body.clientWidth <= 425) {
+    document.querySelector('.wrapper').style.height = "80%";
+  } else {
+    document.querySelector('.wrapper').style.height = "55%";
+  }
+}
+ 
 let ways_arr = [], times_arr = [], train_imgs_arr = [], price_arr = [];
 let parser = (xmlString => {
   const parser = new DOMParser();
@@ -31,7 +40,10 @@ async function parseXML() {
     times_arr.forEach((element, index) => {
       let str_way = ways_arr[index].split(' ');
       if (str_way[2] == where_to && where_from == str_way[0]) {
-        document.querySelector('.wrapper').style.height = "55%";
+        size_win();
+        window.addEventListener('resize', () => {
+          size_win();
+        })
         document.querySelector('.input_date').style.display = "block";
         document.querySelector('.number_passangers').style.display = "block";
         document.querySelector('.summa').style.display = "block";

@@ -34,8 +34,7 @@
   section .booking {
     display: grid;
     grid-template-columns: 1fr;
-    -ms-grid-template-rows: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
   section .booking .input_where_from, section .booking .input_date,
   section .booking .input_where_to, section .booking .button_booking {
@@ -62,7 +61,10 @@
 }
 @media (max-width: 585px) {
   header .menu img {
-    margin-left: 0px;
+    margin-left: 20px;
+  }
+  header .menu .burger-menu {
+    margin-right: 20px;
   }
   .table .rows {
     width: 100%;

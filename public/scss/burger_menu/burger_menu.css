@@ -100,6 +100,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  align-items: center;
   width: 100%;
   animation: menu_on 0.5s;
   height: 60px;
@@ -108,9 +109,7 @@
 }
 .burger-container-on a,
 .burger-container-off a {
-  height: 30px;
-  margin-left: 30px;
-  margin-top: 20px;
+  height: 15px;
   opacity: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -120,24 +119,25 @@
   font-family: Roboto;
   font-weight: bold;
 }
+.burger-container-on .schedule, .burger-container-on .booking-mob,
+.burger-container-off .schedule,
+.burger-container-off .booking-mob {
+  margin-bottom: 10px;
+}
 .burger-container-on .sign_out_block,
 .burger-container-off .sign_out_block {
   display: grid;
   grid-template-columns: 60% 40%;
   align-items: center;
   width: 130px;
+  margin-bottom: 10px;
 }
 .burger-container-on .sign_out_block .avatar,
 .burger-container-off .sign_out_block .avatar {
   width: 30px;
   height: 30px;
-  margin-left: 10px;
   border: 2px solid #565656;
   border-radius: 5px;
-}
-.burger-container-on .sign_out_block a,
-.burger-container-off .sign_out_block a {
-  margin-top: 5px;
 }
 
 .burger-container-off {
@@ -171,7 +171,7 @@
 }
 @media (max-width: 425px) {
   header .burger-container-on a {
-    height: 10px;
-    margin-top: 5px;
+    height: 15px;
+    font-size: 12px;
   }
 }/*# sourceMappingURL=burger_menu.css.map */

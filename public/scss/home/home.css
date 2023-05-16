@@ -80,7 +80,6 @@ header .menu-desktop .sign_out_block {
 header .menu-desktop .sign_out_block .avatar {
   width: 30px;
   height: 30px;
-  margin-left: 10px;
   border: 2px solid #565656;
   border-radius: 5px;
 }

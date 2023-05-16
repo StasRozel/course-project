@@ -28,14 +28,23 @@ if(check_user) {
     sign_in.style.display = "none";
 }
 let sign_out = document.querySelector('.sign_out');
+
+let sign_out_block = document.querySelector('.sign_out_block');
 if(sign_out != null) {
-    sign_out.onclick = () => {
+    sign_out.addEventListener("click", () => {
         check_user = false;
         sign_in.style.display = "block"
         document.querySelector('.sign_out_block').style.display = "none"
         localStorage.setItem('check_user', check_user.toString());
         location.reload();
-    }
+    })
+    sign_out_block.addEventListener("touchstart", () => {
+        check_user = false;
+        sign_in.style.display = "block"
+        document.querySelector('.sign_out_block').style.display = "none"
+        localStorage.setItem('check_user', check_user.toString());
+        location.reload();
+    })
 }
 
 if(!check_user) {

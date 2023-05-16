@@ -58,6 +58,12 @@ let parser = (xmlString => {
         <button class = "open_list">Открыть весь список<button>
         `;
       }
+
+      document.querySelector('.open_list').onclick = () => {
+        parser(xmlString);
+        document.querySelector('.error_message').style.display ="none";
+        document.querySelector('.open_list').style.display ="none";
+      }
     };
 
   }

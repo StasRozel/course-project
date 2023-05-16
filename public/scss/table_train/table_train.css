@@ -85,7 +85,6 @@ header .menu-desktop .sign_out_block {
 header .menu-desktop .sign_out_block .avatar {
   width: 30px;
   height: 30px;
-  margin-left: 10px;
   border: 2px solid #565656;
   border-radius: 5px;
 }
@@ -233,6 +232,18 @@ section h2 {
 .table .error_message {
   font-family: "IBM Plex Serif";
   font-weight: 600;
+}
+.table .open_list {
+  width: 320px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 20px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #FCC12B;
+  font-family: "IBM Plex Serif";
+  font-weight: 600;
+  cursor: pointer;
 }
 
 /*-----------------------FOOTER-------------------------*/

@@ -163,7 +163,25 @@ section {
         font-family: 'IBM Plex Serif';
             font-weight: 600;
     }
+
+    .open_list {
+        width: 320px;
+        height: 40px;
+        
+        margin-top: 30px;
+        margin-left: 20px;
+
+        border: 0;
+        border-radius: 10px;
+        background-color: #FCC12B;
+
+        font-family: 'IBM Plex Serif';
+        font-weight: 600;
+
+        cursor: pointer;
+    }
 }
+
 /*-----------------------FOOTER-------------------------*/
 footer {
     -ms-flex-item-align: end;
