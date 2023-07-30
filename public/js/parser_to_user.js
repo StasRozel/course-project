@@ -42,7 +42,7 @@ async function parseUsersXML() {
           setTimeout(() => {
             modal.style.animation = "";
           }, 2000);
-          window.setTimeout(() => {window.location.href = "http://localhost:3000/components/home.html"}, 3000);
+          window.setTimeout(() => {window.location.href = "https://course-project-jggs.onrender.com/components/home.html"}, 3000);
           sign_up_user = true;
           localStorage.setItem('check_user', sign_up_user.toString());
           flag = false;

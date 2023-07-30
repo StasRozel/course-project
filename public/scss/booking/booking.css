@@ -137,6 +137,7 @@
   color: #000;
   font-family: Roboto;
   font-weight: bold;
+  font-size: 10px;
 }
 .burger-container-on .schedule, .burger-container-on .booking-mob,
 .burger-container-off .schedule,

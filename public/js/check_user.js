@@ -7,9 +7,6 @@ if (localStorage.getItem('check_user')!= undefined) {
   check_user = JSON.parse(localStorage.getItem('check_user'));
 }
 
-
-
-
 if(check_user) {
     
     menu_desktop.insertAdjacentHTML(`beforeend`, 

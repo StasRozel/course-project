@@ -172,6 +172,9 @@
 @media (max-width: 425px) {
   header .burger-container-on a {
     height: 15px;
-    font-size: 12px;
+    font-size: 10px;
+  }
+  header .burger-container-on .schedule, header .burger-container-on .booking-mob {
+    margin-bottom: 0px;
   }
 }/*# sourceMappingURL=burger_menu.css.map */
